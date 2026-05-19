@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Website</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOGIN PAGE -->
+
+  <div class="login-page" id="loginPage">
+
+    <div class="login-box">
+      <h2>Sign In</h2>
+
+      <input type="text" placeholder="Enter Username" id="username">
+      <input type="password" placeholder="Enter Password" id="password">
+
+      <button onclick="login()">Login</button>
+    </div>
+
+  </div>
+
+
+  <!-- MAIN WEBSITE -->
+
+  <div id="mainWebsite" style="display:none;">
+
+    <!-- NAVBAR -->
+
+    <nav id="navbar">
+
+      <div class="logo">TravelX</div>
+
+      <ul id="nav-links">
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showDestinations()">Destinations</a></li>
+        <li><a href="#" onclick="showServices()">Services</a></li>
+        <li><a href="#" onclick="showContact()">Contact</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    </nav>
+
+
+    <!-- HOME PAGE -->
+
+    <section class="hero" id="homePage">
+
+      <div class="hero-content">
+
+        <h1>Explore Beautiful Places</h1>
+
+        <p>
+          Book flights, trains, hotels and discover amazing destinations.
+        </p>
+
+        <button onclick="showDestinations()">Explore Now</button>
+
+      </div>
+
+    </section>
+
+
+    <!-- DESTINATIONS PAGE -->
+
+   <!-- DESTINATIONS PAGE -->
+
+<section class="page" id="destinationPage">
+
+  <button class="back-btn" onclick="showHome()">⬅ Back</button>
+
+  <h2>Popular Destinations</h2>
+
+  <div class="cards">
+
+    <!-- MALDIVES -->
+
+    <div class="card" onclick="openTourism('maldivesTourism')">
+
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+
+      <h3>Maldives</h3>
+
+      <p>Click to explore tourism places in Maldives.</p>
+
+    </div>
+
+
+    <!-- PARIS -->
+
+    <div class="card" onclick="openTourism('parisTourism')">
+
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+
+      <h3>Paris</h3>
+
+      <p>Click to explore tourism places in Paris.</p>
+
+    </div>
+
+
+    <!-- SWITZERLAND -->
+
+    <div class="card" onclick="openTourism('swissTourism')">
+
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+      <h3>Switzerland</h3>
+
+      <p>Click to explore tourism places in Switzerland.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MALDIVES-->
+
+<section class="page" id="maldivesTourism">
+
+  <button class="back-btn" onclick="showDestinations()">⬅ Back</button>
+
+  <h2>Places To Visit In Maldives</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd">
+      <h3>Male City</h3>
+      <p>Beautiful capital city with beaches and markets.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8">
+      <h3>Vaadhoo Island</h3>
+      <p>Famous glowing beach with blue waves at night.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523">
+      <h3>Water Villas</h3>
+      <p>Luxury resorts above crystal clear water.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PARIS TOURISM -->
+
+<section class="page" id="parisTourism">
+
+  <button class="back-btn" onclick="showDestinations()">⬅ Back</button>
+
+  <h2>Places To Visit In Paris</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114">
+      <h3>Eiffel Tower</h3>
+      <p>Most famous landmark in Paris.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613">
+      <h3>Louvre Museum</h3>
+      <p>World famous art museum with Mona Lisa.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+      <h3>Seine River</h3>
+      <p>Enjoy beautiful boat rides and night views.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SWITZERLAND TOURISM -->
+
+<section class="page" id="swissTourism">
+
+  <button class="back-btn" onclick="showDestinations()">⬅ Back</button>
+
+  <h2>Places To Visit In Switzerland</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <h3>Swiss Alps</h3>
+      <p>Snow mountains and adventure activities.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2">
+      <h3>Lake Geneva</h3>
+      <p>Beautiful lake surrounded by mountains.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29">
+      <h3>Lucerne</h3>
+      <p>Historic city with scenic beauty and bridges.</p>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- SERVICES PAGE -->
+
+    <section class="page" id="servicesPage">
+
+      <button class="back-btn" onclick="showHome()">⬅ Back</button>
+
+      <h2>Booking Services</h2>
+
+      <div class="cards">
+
+        <div class="card booking-card" onclick="showBooking('Flight Booking')">
+          <h3>✈ Flight Booking</h3>
+          <p>Book domestic and international flights.</p>
+        </div>
+
+        <div class="card booking-card" onclick="showBooking('Train Booking')">
+          <h3>🚆 Train Booking</h3>
+          <p>Reserve train tickets easily.</p>
+        </div>
+
+        <div class="card booking-card" onclick="showBooking('Hotel Booking')">
+          <h3>🏨 Hotel Booking</h3>
+          <p>Book luxury and budget hotels.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BOOKING PAGE -->
+
+    <section class="page" id="bookingPage">
+
+      <button class="back-btn" onclick="showServices()">⬅ Back</button>
+
+      <h2 id="bookingTitle">Booking Service</h2>
+
+    <form class="booking-form" onsubmit="bookNow(event)">
+
+  <input type="text" placeholder="Enter Your Name" required>
+
+  <input type="text" placeholder="From" required>
+
+  <input type="text" placeholder="To" required>
+
+  <input type="date" required>
+
+  <button type="submit">Book Now</button>
+
+</form>
+
+    </section>
+
+
+    <!-- CONTACT PAGE -->
+
+    <section class="page" id="contactPage">
+
+      <button class="back-btn" onclick="showHome()">⬅ Back</button>
+
+      <h2>Contact Us</h2>
+
+      <div class="contact-box">
+
+        <p>📞 Phone: +91 9876543210</p>
+        <p>📧 Email: travelx@gmail.com</p>
+        <p>📍 Address: Chennai, India</p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2026 TravelX | Responsive Travel Website</p>
+    </footer>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
