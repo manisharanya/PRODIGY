@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Web App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="stopwatch-box">
+
+      <h1>⏱ Stopwatch</h1>
+
+      <!-- TIME DISPLAY -->
+      <div class="time" id="display">
+        00:00:00
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="buttons">
+
+        <button class="start-btn" onclick="startStopwatch()">
+          Start
+        </button>
+
+        <button class="pause-btn" onclick="pauseStopwatch()">
+          Pause
+        </button>
+
+        <button class="reset-btn" onclick="resetStopwatch()">
+          Reset
+        </button>
+
+        <button class="lap-btn" onclick="recordLap()">
+          Lap
+        </button>
+
+      </div>
+
+      <!-- LAP TIMES -->
+      <div class="laps">
+
+        <h2>Lap Times</h2>
+
+        <ul id="lapList"></ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
